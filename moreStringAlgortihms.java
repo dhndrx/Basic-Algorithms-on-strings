@@ -4,7 +4,7 @@
  * @author (Deonte Hendricks) 
  * @version (1.0)
  */
-public class MoreStringAlgorithms{
+public class moreStringAlgorithms{
     
     /*
      * Takes 2 strings and tests to see if stringa occurs at least twice in stringb.
