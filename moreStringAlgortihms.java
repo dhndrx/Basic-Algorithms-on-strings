@@ -14,12 +14,12 @@ public class moreStringAlgorithms{
         
         int counter = 0, found = 0;
         
-        do{
+        while(counter < 2){
             found = stringb.indexOf(stringa,found);
             if(found == -1)return false;
             counter++;
             found += stringa.length();
-        }while(counter < 2);
+        }
       
         return true;
     }
