@@ -1,3 +1,4 @@
+
 /**
  * Finds Multiples genese in a DNA string
  * 
@@ -37,7 +38,7 @@ public class Part1 {
             return dna.substring(found,tagStop+3);
         }
         
-        else if(tagStop >= tgaStop && tagStop != dna.length()){
+        else if(tgaStop <= tagStop && tgaStop != dna.length()){
             return dna.substring(found,tgaStop+3);
         }
         
@@ -54,7 +55,23 @@ public class Part1 {
     
     public void printAllGenes(String Dna){
         
+        int startIndex = 0;
         
+        while(true){
+            String currentGene = findGene(Dna,startIndex);
+            
+            if(currentGene.equals("")){
+                break;
+            }
+            
+            System.out.println(currentGene);
+            startIndex = Dna.indexOf(currentGene, startIndex)+currentGene.length();
+            
+            
+        }
     }
     
+    public void testPrintAllGenes(){
+           printAllGenes("atgghttgaghttagatgghttgaghttga");
+        }
 }
