@@ -1,6 +1,6 @@
 
 /**
- * Finds Multiples genese in a DNA strings
+ * Finds Multiples genes in a DNA string
  * 
  * @author (Deontee Hendricks) 
  * @version (1.0)
